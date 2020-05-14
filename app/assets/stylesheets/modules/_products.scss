@@ -1,0 +1,53 @@
+.local__product{
+  padding: 0 10px;
+  &__yohaku{
+    width: 100%;
+    height: 80px;
+  }
+  &__title{
+    // background-color: black;
+    color: black;
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+    padding: 35px;
+    border: solid 5px;
+  }
+  &__searchbar{
+    background-color: wheat;
+    color: black;
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+    padding: 35px;
+    // border: solid 5px;
+  }
+  &__lineups{
+    // background-color: rgb(212, 220, 241);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    &__lineup{
+      width: calc(33.3% - 10px);
+      margin: 5px;
+      border: solid 3px;
+      .lineup__image{
+        height: 150px;
+        width: 100%;
+        border: solid 1px;
+      }
+      .name{
+
+      }
+      .price{
+
+      }
+      .seinou{
+
+      }
+    }
+  }
+}

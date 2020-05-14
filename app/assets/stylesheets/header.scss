@@ -1,0 +1,63 @@
+// レイアウトテンプレート使用HTML/HAMLはapplication.html.hamlに記述
+.main__header{
+  background-color: rgba(25, 32, 24, 0.288);
+  height: 80px;
+  width: 100%;
+  padding: 30px 50px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+
+  &__left{
+    // background-color: gray;
+    font-size: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &__about{
+      background-color: gray;
+      height: 30px;
+      width: 100%;
+    }
+    &__product{
+      background-color: gray;
+      height: 30px;
+      width: 100%;
+    }
+  }
+  &__center{
+    font-size: 40px;
+    font-family: sans-serif;
+  .name__btn{
+    text-decoration: none;
+  }
+  }
+  &__right{
+    // background-color: gray;
+    font-size: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &__info{
+      background-color: gray;
+      height: 30px;
+      width: 100%;
+    }
+    &__com{
+      background-color: gray;
+      height: 30px;
+      width: 100%;
+    }
+  }
+  .contents__btn{
+    color: white;
+    text-decoration: none;
+
+  }
+  .contents__btn:hover {
+    text-decoration: underline;
+  }
+}

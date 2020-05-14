@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    %title Menmen
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .main__header
+      .main__header__left
+        .main__header__left__about
+          = link_to abouts_path, class: "contents__btn" do
+            ABOUT
+        .main__header__left__product
+          = link_to products_path, class: "contents__btn" do
+            PRODUCT
+      .main__header__center
+        = link_to root_path, class: "name__btn" do
+          USUKI
+      .main__header__right
+        .main__header__right__info
+          = link_to informations_path, class: "contents__btn" do
+            INFORMATION
+        .main__header__rigth__com
+          = link_to companys_path, class: "contents__btn" do
+            COMPANY
+    = yield
