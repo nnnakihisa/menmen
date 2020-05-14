@@ -1,0 +1,25 @@
+.local__info{
+  padding: 0 10px;
+  &__yohaku{
+    width: 100%;
+    height: 80px;
+  }
+  &__title{
+    // background-color: black;
+    color: black;
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: center;
+    padding: 35px;
+    border: solid 5px;
+  }
+  &__text{
+    display: flex;
+    justify-content: center;
+    &--left{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

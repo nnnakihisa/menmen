@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+}
+
+// .main__headerのSCSSはレイアウトテンプレートを
+// 使ったのでapp/stylesheets/_header.scssに記述
+
+.allall{
+  overflow: scroll;
+  padding: 0 20px;
+  &__yohaku{
+    width: 100%;
+    height: 110px;
+  }
+  &__top__content{
+    width: 100%;
+    height: 90vh;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+    background-image: url(img_top.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__text{
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+  &__about{
+    color: #ffffff;
+    height: 70vh;
+    width: 100%;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+    background-image: url(img_about.jpg);
+    background-size: cover;
+    background-position: center;
+    &__text{
+      .link__btn{
+        text-decoration: none;
+        background-color: black;
+        color: #ffffff;
+        height: 70px;
+        width: 80px;
+        size: 16px;
+        text-align: center;
+        padding: 5px 15px;
+        // margin: auto 0 auto 15px;
+      }
+    }
+
+  }
+  &__product{
+    height: 70vh;
+    width: 100%;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+    background-image: url(img_pro.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &__text{
+      color:  black;
+      position: absolute;
+      text-align: center;
+      display: inline-block;
+      text-align: left;
+      // top: 80%;
+      // left: 50%;
+      .link__btn{
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        height: 70px;
+        width: 80px;
+        size: 16px;
+        text-align: center;
+        padding: 5px 15px;
+        // margin: auto 0 auto 15px;
+      }
+    }
+  }
+  &__info{
+    color: #ffffff;
+    height: 70vh;
+    width: 100%;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+    background-image: url(img_info.jpg);
+    background-size: cover;
+    background-position: center;
+    &__text{
+      .link__btn{
+        text-decoration: none;
+        background-color: black;
+        color: #ffffff;
+        height: 70px;
+        width: 80px;
+        size: 16px;
+        text-align: center;
+        padding: 5px 15px;
+        // margin: auto 0 auto 15px;
+      }
+    }
+  }
+  &__com{
+    height: 50vh;
+    width: 100%;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    &__image{
+      height: 100%;
+      width: 100%;
+      background-image: url(img_com.jpg);
+      background-size: cover;
+      background-position: center;
+      // position: relative;
+    }
+    &__text{
+      height: 100%;
+      width: 50%;
+      color: black;
+      text-align: center;
+      border: solid 3px;
+      padding-top: 30%;
+      .link__btn{
+        text-decoration: none;
+        background-color: #ffffff;
+        color: black;
+        // height: 70px;
+        // width: 80px;
+        size: 16px;
+        text-align: center;
+        padding: 5px 15px;
+        border: solid 3px;
+      }
+    }
+  }
+}
+
+.footer__main{
+  background-color: rgb(131, 131, 139);
+  height: 50px;
+  width: 100%;
+  &__name{
+    text-align: center;
+    padding-top: 15px;
+  }
+
+}

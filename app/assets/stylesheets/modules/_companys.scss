@@ -1,0 +1,39 @@
+.local__com{
+  padding: 0 10px;
+  // overflow: scroll;
+  &__yohaku{
+    width: 100%;
+    height: 80px;
+  }
+  &__title{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 40px;
+    
+  }
+  &__text{
+    // overflow: scroll;
+    background-image: url(img_com2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    &--left{
+      background-color: white;
+      width: 30%;
+      height: 300px;
+      margin: 15px 25px 0 0;
+    }
+    &--right{
+      background-color: wheat;
+      width: 30%;
+      height: 800px;
+      margin: 90px 0 15px 0;
+
+    }
+  }
+}
