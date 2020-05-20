@@ -1,7 +1,86 @@
 .local__about{
   padding: 0 10px;
+  
   &__yohaku{
     width: 100%;
     height: 80px;
+  }
+  &__title{
+    color: black;
+    font-size: 2em;
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    text-align: center;
+    padding: 15px;
+    border: solid 5px;
+  }
+
+  &__message1{
+    font-size: 3em;
+    text-align: center;
+    margin: 10px 0;
+    .image{
+      background-image: url(img_1.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &__message2{
+    font-size: 3em;
+    text-align: center;
+    margin: 10px 0;
+    .image{
+      background-image: url(img_2.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &__message3{
+    font-size: 3em;
+    text-align: center;
+    margin: 10px 0;
+    .image{
+      background-image: url(img_3.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &__message4{
+    font-size: 3em;
+    text-align: center;
+    margin: 10px 0 40px;
+    .image{
+      background-image: url(img_4.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .image{
+    width: 100%;
+    height: 70vh;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+  }
+  &__text{
+    background-color: rgb(20, 2, 2);
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin: 10px 0 60px;
+
+    &__cover{
+      background-color: white;
+      font-size: 25px;
+      border: solid 2px;
+      border-color: black;
+      width: 100%;
+      height: 150px;
+      position: absolute;
+      top: 25%;
+      right: 5%;
+      text-align: center;
+      padding-top: 40px;
+    }
   }
 }

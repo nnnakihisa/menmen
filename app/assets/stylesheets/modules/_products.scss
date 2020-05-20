@@ -7,11 +7,12 @@
   &__title{
     // background-color: black;
     color: black;
+    font-size: 2em;
     width: 100%;
-    height: 100px;
+    height: 80px;
     margin: 10px 0;
     text-align: center;
-    padding: 35px;
+    padding: 15px;
     border: solid 5px;
   }
   &__searchbar{
@@ -25,14 +26,14 @@
     // border: solid 5px;
   }
   &__lineups{
-    // background-color: rgb(212, 220, 241);
+    background-color: rgb(212, 220, 241);
     width: 100%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     &__lineup{
-      width: calc(33.3% - 10px);
-      margin: 5px;
+      width: calc(30% - 5px);
+      margin: 10px auto;
       border: solid 3px;
       .lineup__image{
         height: 150px;
@@ -45,7 +46,7 @@
       .price{
 
       }
-      .seinou{
+      .coment{
 
       }
     }

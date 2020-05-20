@@ -1,6 +1,7 @@
 // レイアウトテンプレート使用HTML/HAMLはapplication.html.hamlに記述
 .main__header{
   background-color: rgba(25, 32, 24, 0.288);
+  font-size: 1em;
   height: 80px;
   width: 100%;
   padding: 30px 50px;
@@ -9,53 +10,42 @@
   display: flex;
   justify-content: space-between;
 
-  &__left{
-    // background-color: gray;
-    font-size: 20px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-
-    &__about{
-      background-color: gray;
-      height: 30px;
-      width: 100%;
-    }
-    &__product{
-      background-color: gray;
-      height: 30px;
-      width: 100%;
-    }
+  &left__about{
+    background-color: gray;
+    height: 30px;
+    width: 50px;
+  }
+  &left__product{
+    background-color: gray;
+    height: 30px;
+    width: 50px;
   }
   &__center{
-    font-size: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
     font-family: sans-serif;
-  .name__btn{
-    text-decoration: none;
-  }
-  }
-  &__right{
-    // background-color: gray;
-    font-size: 20px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-
-    &__info{
-      background-color: gray;
-      height: 30px;
-      width: 100%;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    .name__btn{
+      color: white;
+      text-decoration: none;
     }
-    &__com{
-      background-color: gray;
-      height: 30px;
-      width: 100%;
-    }
+  }
+  &right__info{
+    background-color: gray;
+    height: 30px;
+    width: 100%;
+  }
+  &right__com{
+    background-color: gray;
+    height: 30px;
+    width: 100%;
   }
   .contents__btn{
     color: white;
     text-decoration: none;
-
   }
   .contents__btn:hover {
     text-decoration: underline;

@@ -1,0 +1,15 @@
+.local__product__searchbar
+  = form_tag @product do |f|
+    = text_field_tag :keyword
+    = submit_tag '検索', class: 'search__btn'
+.local__product__lineups
+  - @products.each do |product|
+    .local__product__lineups__lineup
+      .lineup__image
+        = product.image_name
+      .name
+        = "商品名：#{product.name}"
+      .price
+        = "価格：#{product.price}"
+      .coment
+        = "特徴：#{product.coment}"

@@ -8,11 +8,12 @@
   &__title{
     background-color: black;
     color: white;
+    font-size: 2em;
     width: 100%;
-    height: 100px;
+    height: 80px;
     margin-top: 10px;
     text-align: center;
-    padding: 40px;
+    padding: 15px;
     
   }
   &__text{
@@ -24,13 +25,13 @@
     justify-content: center;
     &--left{
       background-color: white;
-      width: 30%;
+      width: 40%;
       height: 300px;
       margin: 15px 25px 0 0;
     }
     &--right{
-      background-color: wheat;
-      width: 30%;
+      background-color: rgb(182, 180, 176);
+      width: 40%;
       height: 800px;
       margin: 90px 0 15px 0;
 

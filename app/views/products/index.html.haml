@@ -3,40 +3,19 @@
   .local__product__title
     商品
   .local__product__searchbar
-    インクリメンタルサーチ
+    = form_tag @product do |f|
+      商品名：
+      = text_field_tag :keyword
+      = submit_tag '検索', class: 'search__btn'
   .local__product__lineups
-    .local__product__lineups__lineup
-      = image_tag "img_ken.jpg", class: 'lineup__image' 
-      .name
-        ケンゴリラ
-      .price
-        応談
-      .seinou
-        全身が柔らかい体毛で覆われている小型獣である。
+    - @products.each do |product|
+      .local__product__lineups__lineup
+        .lineup__image
+          = product.image_name
+        .name
+          = "商品名：#{product.name}"
+        .price
+          = "価格：#{product.price}"
+        .coment
+          = "特徴：#{product.coment}"
 
-    .local__product__lineups__lineup
-      = image_tag "img_ken.jpg", class: 'lineup__image', alt:"NO IMAGE"
-      .name
-        浩志
-      .price
-        0
-      .seinou
-        稲葉っぽさが微塵もないが、名前の由来はB'zから。
-
-    .local__product__lineups__lineup
-      = image_tag "img_ken.jpg", class: 'lineup__image', alt:"NO IMAGE"
-      .name
-        雑用長
-      .price
-        各自治体の最低賃金
-      .seinou
-        しん。
-
-    .local__product__lineups__lineup
-      = image_tag "img_com.jpg", class: 'lineup__image', alt:"NO IMAGE"
-      .name
-        雑用長
-      .price
-        各自治体の最低賃金
-      .seinou
-        しん。
